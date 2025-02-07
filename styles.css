@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+body{
+    background-color: #333;
+    font-family: Inconsolata, sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+}
+
+.header__checkbox:checked ~ .nav{
+    display: flex;
+}
+
+
+.header__checkbox{
+    display: none;
+}
+
+.open__nav-button{
+    position: absolute;
+    right: 25px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #48e;
+}
+
+.nav{
+    width: 100vw;
+    height: 50vh;
+    background-color: #032f30;
+    display: none;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(239, 222, 222, 0.3);
+}
+
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__item{
+    list-style: none;
+     
+}
+
+.nav__link{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white
+}
+
+.nav__link:hover{
+    opacity: 0.7;
+}
+
+/*main section*/
+h1{
+    text-align: center;
+    margin-top: 55px;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+.section__about{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section__logos{
+    display: flex;
+}
+
+.section__about{
+    width: 100%;
+}
+
+.section__container{
+    width: 30%;
+    box-shadow: 0 0 15px #fff;
+    background-color: #48e;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.section__content-about{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__experience{
+   
+    width: 50%;
+    background-color: #48e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;
+}
+
+
+
+
+.container__techno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+.img_profile{
+    width: 100%;
+    width: 256px;
+    border-radius: 50%;
+   
+}
+
+.img__css{
+    width: 148px;
+}
+
+.img__tailwind{
+    width: 356px;
+}
+
+.logo-linkedin{
+    width: 48px;
+}
+
+.logo-github{
+    height: 48px;
+}
+
+section img{
+    width: 128px;
+}
+

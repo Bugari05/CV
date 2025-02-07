@@ -3,85 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio de Emmanuel"> <!-- Es para poner una descripción para que aparezca
-                                                                    en el buscado de Google-->
-
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="" href=""> <!-- Es para poner un icono-->
+    <meta name="description" content="Portfolio de Emmanuel" />
+    <title>Portfolio como ejercicio de HTML y CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="" href="" />
+    <!-- Es para poner un icono-->
   </head>
   <body>
-    
-    <header>
-      <h1>Portfolio de Emmanuel Ibarra</h1>
+    <header id="header">
+
+      <input type="checkbox" id="open" class="header__checkbox">
+      <label for="open" class="open__nav-button" role="checkbox">=</label>
+
       <nav class="nav">
-          <ul class="nav_list">
-              <li class="nav_item"><a href="" class="nav_links">Inicio</a></li>
-              <li class="nav_item"><a href="" class="nav_links">Acerca de</a></li>
-              <li class="nav_item"><a href="" class="nav_links">Tecnologias</a></li>
-              <li class="nav_item"><a href="" class="nav_links">Contacto</a></li>
-          </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Acerca de mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Tecnologías</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Proyectos</a>
+          </li>
+          <li class="nav__item">   
+              <a href="#" class="nav__link">Contacto</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <article>
-          <header></header>
-          <p>Descripcion de lo que hice en cierta parte</p>
-          <footer>
-            <small>Tecnologias utilizadas</small>
-          </footer>
-        </article>
+    <main id="main">
+      <h1>Portfolio de Emmanuel Ibarra Patrón</h1>
+      <section class="section__about">
+        <div class="section__container">
+      
+          <div class="section__content-about">
+            <h2 class="subtitle__about">Acerca de mí</h2>
+
+            <div class="section__img">
+              <img src="images/perfil-emmanuel.jpeg" alt="" class="img_profile" />
+            </div>
+            <p class="section__content-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Veritatis, perspiciatis alias odio molestiae facilis error,
+              reprehenderit voluptate laudantium nemo vel cumque provident, non
+              aliquid cum dolor. Doloribus quaerat assumenda perferendis?
+            </p>
+          </div>
+
+          <div class="section__logos">
+            <div class="img-linkedin">
+              <img src="images/logos/linkedin.svg" alt="" class="logo-linkedin" />
+            </div>
+            <div class="img-github">
+              <img src="images/logos/github-dark.svg" alt=""  class="logo-github"/>
+            </div>
+          </div>
+        </div>
+
+
         
-        <article>
-          <header></header>
-          <p>Descripcion de lo que hice en cierta parte</p>
-          <footer>
-            <small>Tecnologias utilizadas</small>
-          </footer>
-        </article>
-        <article>
-          <header></header>
-          <p>Descripcion de lo que hice en cierta parte</p>
-          <footer>
-            <small>Tecnologias utilizadas</small>
-          </footer>
-        </article>
+        <div class="section__experience">
+          <h2 class="subtitle__experience">Experiencia y formación</h2>
+          <p class="section__experience-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
+            veritatis modi? Similique maiores necessitatibus sint dolores
+            fugiat! Temporibus molestiae magni aut, eum inventore corrupti. Nemo
+            inventore animi iure earum aliquam!
+          </p>
+        </div>
       </section>
 
-      <aside>
-        <header>
-          <h3>Mis tecnologias</h3>
-        </header>
-        <div>
-          <ul>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </ul>
+      <section class="section__technologies">
+        <h2 class="subtitle__technologies">Tecnologias</h2>
+        <div class="container__techno">
+          <div class="python">
+            <img src="images/logos/python.svg" alt="" class="img__python">
+          </div>
+          <div class="Postgre">
+            <img src="images/logos/postgresql.svg" alt="" class="img__postgre">
+          </div>
+          <div >
+            <img src="images/logos/html5.svg" alt="" class="img__html">
+            <img src="images/logos/css_old.svg" alt="" class="img__css">
+          </div>
+          <div class="JavaScript">
+            <img src="images/logos/javascript.svg" alt="" class="img__javascript">
+          </div>
+          <div class="Git">
+            <img src="images/logos/git.svg" alt="" class="img__git">
+          </div>
+          <div class="GitHub">
+            <img src="images/logos/github-dark.svg" alt="" class="img__github">
+          </div>
+          <div class="Shell">
+            <img src="images/logos/bash_dark.svg" alt="">
+          </div>
+          <div class="FastAPI">
+            <img src="images/logos/fastapi.svg" alt="" class="img__fastapi">
+          </div>
+          <div class="Astro">
+            <img src="images/logos/astro_dark.svg" alt="" class="img__astro">
+          </div>
+          <div class="Docker">
+            <img src="images/logos/docker.svg" alt="" class="img__docker">
+          </div>
+          <div class="Tailwind">
+            <img src="images/logos/tailwindcss-wordmark.svg" alt="" class="img__tailwind">
+          </div>
+          <div class="Boostrap">
+            <img src="images/logos/bootstrap.svg" alt="" class="img__boostrap">
+          </div>
         </div>
-      </aside>
+      </section>
+
+      <article class="article_proyects">
+          <h2>Proyectos realizados</h2>
+          <div>Invitaciones</div>
+          <div>Pagina de ferreteria</div>
+          <div>Calculadora de malla ciclonica</div>
+      </article>
     </main>
 
-    <section>
+    <section id="form_contact">
       <h2>Formulario de contacto</h2>
-      <form action="" method="post">
-        <fieldset>  
-          <legend>Informacion</legend>
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Emmanuel">
+      <form action="">
+        <div>
+          <div><input type="text" /></div>
+          
+          <div><input type="email" /></div>
           <button>Enviar</button>
-        </fieldset>
+        </div>
       </form>
     </section>
 
-    <footer>
-   
+    <footer id="footer">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique
+      autem quibusdam exercitationem neque totam aliquam! Dolore, accusamus id
+      temporibus cupiditate laudantium veritatis natus dolor, rem velit hic non
+      qui!
     </footer>
-
   </body>
 </html>
