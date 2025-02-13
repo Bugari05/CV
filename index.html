@@ -6,19 +6,22 @@
     <meta name="description" content="Portfolio de Emmanuel" />
     <title>Portfolio como ejercicio de HTML y CSS</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Es para poner un icono-->
   </head>
   <body>
     <header id="header">
-
-      <!-- <input type="checkbox" id="open" class="header__checkbox">
-      <label for="open" class="nav-button" role="checkbox">=</label> -->
-
-      <div class="header__light">
-        <img src="images/logos/brightness-up.svg" alt="" class="light-mode">
-      </div>
-      
+      <div class="header__logo">Mi portfolio</div>
+      <span class="material-icons">menu</span>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -30,116 +33,174 @@
           <li class="nav__item">
             <a href="#" class="nav__link">Proyectos</a>
           </li>
-          <li class="nav__item">   
-              <a href="#" class="nav__link contacto">Contacto</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
-<!-- 
+
     <main id="main">
-      <h1>Portfolio de Emmanuel Ibarra Patrón</h1>
-      <section class="section__about">
-        <div class="section__container">
-      
+      <section class="section__aboutme">
+        <div class="section__container-about">
           <div class="section__content-about">
             <h2 class="subtitle__about">Acerca de mí</h2>
-
             <div class="section__img">
-              <img src="images/perfil-emmanuel.jpeg" alt="" class="img_profile" />
+              <img
+                src="images/perfil-emmanuel.jpeg"
+                alt="Imagen de Emmanuel mirando enfrente en modo serio"
+                class="img_profile"
+              />
             </div>
             <p class="section__content-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis, perspiciatis alias odio molestiae facilis error,
-              reprehenderit voluptate laudantium nemo vel cumque provident, non
-              aliquid cum dolor. Doloribus quaerat assumenda perferendis?
-              reprehenderit voluptate laudantium nemo vel cumque provident, non
-              aliquid cum dolor. Doloribus quaerat assumenda perferendis?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+              incidunt repudiandae nostrum accusamus, voluptate, molestiae quod
+              vitae, voluptas corrupti minus repellat eaque dolor ducimus minima
+              nihil deleniti ipsam maiores! Adipisci!
             </p>
+            <button class="btn-cv">Descargar CV</button>
           </div>
-
           <div class="section__logos">
             <div class="img-linkedin">
-              <img src="images/logos/linkedin.svg" alt="" class="logo-linkedin" />
+              <img
+                src="images/logos/linkedin.svg"
+                alt=""
+                class="logo-linkedin"
+              />
             </div>
             <div class="img-github">
-              <img src="images/logos/github-dark.svg" alt=""  class="logo-github"/>
+              <img
+                src="images/logos/github-dark.svg"
+                alt=""
+                class="logo-github"
+              />
             </div>
           </div>
         </div>
 
-        <div class="section__experience">
+        <div class="section__container-experience">
           <h2 class="section__subtitle-experience">Experiencia y formación</h2>
-          <p class="section__experience-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
-            veritatis modi? Similique maiores necessitatibus sint dolores
-            fugiat! Temporibus molestiae magni aut, eum inventore corrupti. Nemo
-            inventore animi iure earum aliquam!
-          </p>
-        </div>
-      </section> -->
-
-      <!-- <section class="section__technologies">
-        
-          <h2 class="subtitle__technologies">Tecnologias</h2>
-          <div class="container__techno">
-            <div class="python">
-              <img src="images/logos/python.svg" alt="" class="img__python">
-            </div>
-            <div class="box Postgre">
-              <img src="images/logos/postgresql.svg" alt="" class="img__postgre">
-            </div>
-            <div class="box">
-              <img src="images/logos/html5.svg" alt="" class="img__html">
-              <img src="images/logos/css_old.svg" alt="" class="img__css">
-            </div>
-            <div class="box JavaScript">
-              <img src="images/logos/javascript.svg" alt="" class="img__javascript">
-            </div>
-            <div class="box Git">
-              <img src="images/logos/git.svg" alt="" class="img__git">
-            </div>
-            <div class="box GitHub">
-              <img src="images/logos/github-dark.svg" alt="" class="img__github">
-            </div>
-            <div class="box Shell">
-              <img src="images/logos/bash_dark.svg" alt="">
-            </div>
-            <div class="box FastAPI">
-              <img src="images/logos/fastapi.svg" alt="" class="img__fastapi">
-            </div>
-            <div class="box Astro">
-              <img src="images/logos/astro_dark.svg" alt="" class="img__astro">
-            </div>
-            <div class="box Docker">
-              <img src="images/logos/docker.svg" alt="" class="img__docker">
-            </div>
-            <div class="box Tailwind">
-              <img src="images/logos/tailwindcss-wordmark.svg" alt="" class="img__tailwind">
-            </div>
-            <div class="box Boostrap">
-              <img src="images/logos/bootstrap.svg" alt="" class="img__boostrap">
-            </div>
+          <div class="section__experience-text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque fugiat vel vero ipsa adipisci consequatur deleniti
+              quisquam, tempore ea laboriosam corporis molestias, ad beatae
+              saepe illum tenetur nam odit libero?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Tenetur et est accusantium quia,
+              aperiam, fugiat nobis explicabo quis neque impedit provident alias
+              exercitationem hic vitae at ratione quo nemo aut?
+            </p>
           </div>
-        
+        </div>
       </section>
 
-      <article class="article_proyects">
-          <h2>Proyectos realizados</h2>
-          <div>Invitaciones</div>
-          <div>Pagina de ferreteria</div>
-          <div>Calculadora de malla ciclonica</div>
+      <section class="section__technologies">
+        <h2 class="subtitle__technologies">Tecnologias</h2>
+        <div class="container__techno">
+          <div class="box python">
+            <img src="images/logos/python.svg" alt="" class="img__python" />
+          </div>
+          <div class="box Postgre">
+            <img
+              src="images/logos/postgresql.svg"
+              alt=""
+              class="img__postgre"
+            />
+          </div>
+          <div class="box html-css">
+            <img src="images/logos/html5.svg" alt="" class="img__html" />
+            <img src="images/logos/css_old.svg" alt="" class="img__css" />
+          </div>
+          <div class="box JavaScript">
+            <img
+              src="images/logos/javascript.svg"
+              alt=""
+              class="img__javascript"
+            />
+          </div>
+          <div class="box Git">
+            <img src="images/logos/git.svg" alt="" class="img__git" />
+          </div>
+          <div class="box GitHub">
+            <img
+              src="images/logos/github-dark.svg"
+              alt=""
+              class="img__github"
+            />
+          </div>
+          <div class="box Shell">
+            <img src="images/logos/bash_dark.svg" alt="" />
+          </div>
+          <div class="box FastAPI">
+            <img src="images/logos/fastapi.svg" alt="" class="img__fastapi" />
+          </div>
+          <div class="box Astro">
+            <img src="images/logos/astro_dark.svg" alt="" class="img__astro" />
+          </div>
+          <div class="box Docker">
+            <img src="images/logos/docker.svg" alt="" class="img__docker" />
+          </div>
+         
+        
+          <div class="box Boostrap-tailwidn">
+            <img
+              src="images/logos/bootstrap.svg"
+              alt=""
+              class="img__boostrap"
+            />
+            <img
+            src="images/logos/tailwindcss-wordmark.svg"
+            alt=""
+            class="img__tailwind"/>
+          </div>
+        </div>
+      </section>
+
+      <article class="section_projects">
+        <h2 class="section_projects-subtitle">Proyectos realizados</h2>
+        <div class="article_proyects">
+          <div class="malla-ciclonica">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam perferendis aliquid expedita eaque quae modi eius, veniam doloremque voluptas, labore velit debitis facere delectus quidem accusantium asperiores ducimus nisi voluptates.
+              Malla ciclonica .Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci vel similique nemo magnam itaque maxime ipsam amet iste! Inventore voluptatem dolorem laudantium totam natus doloremque soluta quasi recusandae veniam praesentium!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam odit enim voluptatum culpa voluptatem obcaecati iure dignissimos voluptas cupiditate explicabo, quasi animi nulla quae dolor! Possimus esse iure aliquam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi quia enim quod quis dicta quidem assumenda eos voluptatem hic, sunt repellendus debitis laborum! Dolorum, quae? Voluptas accusamus voluptate illo.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas asperiores obcaecati vel voluptas veritatis, quam impedit recusandae iure alias cum, cumque quaerat libero, iste dolores ea inventore sapiente ab. Quibusdam!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dolore nisi vitae aspernatur nobis illo facilis provident autem nostrum suscipit harum quod veritatis iste beatae quos, inventore vel iusto nesciunt!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laboriosam assumenda ullam possimus, temporibus, obcaecati corrupti inventore quaerat necessitatibus quo exercitationem deserunt rerum amet maxime voluptate dicta veniam, sunt quod!
+            </div>
+
+          <div class="invitaciones">
+            lo
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam error esse repellendus aspernatur consectetur corporis officia voluptatem quae exercitationem reiciendis culpa, voluptates laborum quidem vero cumque quis quo odio cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, facere sequi veritatis aspernatur ad deleniti nulla dolor illum veniam est quis! Nulla, molestias veniam. Pariatur labore laboriosam iste assumenda at.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At incidunt dolor inventore ad officiis itaque esse. Qui laudantium, sed beatae ipsum vitae obcaecati, esse tenetur expedita consequuntur distinctio amet ratione?
+          </div>
+
+          <div class="ferreteria">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi ex et necessitatibus ut ipsa fugiat voluptate adipisci omnis aliquid modi itaque consequuntur eum laborum labore, harum sint quis totam!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime assumenda esse quia est a omnis inventore autem, perspiciatis nemo suscipit, nam explicabo eius ab, culpa alias aspernatur dolorum deleniti non?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nam nemo veritatis, at qui fugit numquam itaque sapiente perferendis delectus vel quibusdam optio commodi, inventore obcaecati, magni accusamus nostrum debitis.
+          </div>
+        </div>
       </article>
     </main>
 
-    <section id="form_contact">
-      <h2>Formulario de contacto</h2>
-      <form action="">
-        <div>
-          <div><input type="text" /></div>
-          
-          <div><input type="email" /></div>
-          <button>Enviar</button>
+    <section id="section__form">
+      <h2 class="form_contact-subtitle">Formulario de contacto</h2>
+
+      <form action="" class="formulario">
+          <div>
+            <label for="">asunto:</label>
+            <input type="text" />
+          </div>
+
+          <div>
+            <label for="">correo:</label>
+            <input type="email" />
+          </div>
+          <div>
+            <button>Enviar</button>
+          </div>
         </div>
       </form>
     </section>
@@ -149,6 +210,6 @@
       autem quibusdam exercitationem neque totam aliquam! Dolore, accusamus id
       temporibus cupiditate laudantium veritatis natus dolor, rem velit hic non
       qui!
-    </footer> -->
+    </footer>
   </body>
 </html>
